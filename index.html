@@ -95,34 +95,7 @@
         .fa-facebook:hover, .fa-instagram:hover {
             color: #007BFF;
         }
-    </style> <!-- Gallery Section -->
-<section id="gallery" class="container">
-    <h2>Galería de Fotos</h2>
-    <div class="photo-gallery">
-        <!-- Add your images here -->
-        <img src="IMG_0881.JPG" alt="Image description">
-        <img src="IMG_0893.JPG" alt="Image description">
-        <!-- Repeat the above line for each image you want to include, changing the src and alt attributes accordingly -->
-    </div>
-</section>
-.photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
-    margin-top: 20px;
-}
-
-.photo-gallery img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.photo-gallery img:hover {
-    transform: scale(1.03);
-}
-
+    </style> <
     <title>Cristo Para Todos</title>
 </head>
 <body>
@@ -145,7 +118,27 @@
                 <p>Dirección: 5630 El Buey Way, Houston, TX</p>
                 <h3>Misión</h3>
                 <p>La iglesia Cristo Para Todos ha sido llamada a ganar, restaurar y edificar las familias de la tierra comenzando en nuestra ciudad.</p>
-            </section>
+            </section> .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the min size for better spacing */
+    grid-gap: 15px; /* Increase gap for better visual separation */
+    padding: 20px; /* Add padding around the gallery */
+}
+
+.photo-gallery img {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow for depth */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size for smaller screens */
+    }
+}
+
         </div>
     </main>
     <section id="donations" aria-label="Diezmo y Ofrenda">

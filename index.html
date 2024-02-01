@@ -95,7 +95,34 @@
         .fa-facebook:hover, .fa-instagram:hover {
             color: #007BFF;
         }
-    </style>
+    </style> <!-- Gallery Section -->
+<section id="gallery" class="container">
+    <h2>Galería de Fotos</h2>
+    <div class="photo-gallery">
+        <!-- Add your images here -->
+        <img src="IMG_0881.JPG" alt="Image description">
+        <img src="IMG_0893.JPG" alt="Image description">
+        <!-- Repeat the above line for each image you want to include, changing the src and alt attributes accordingly -->
+    </div>
+</section>
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.03);
+}
+
     <title>Cristo Para Todos</title>
 </head>
 <body>
